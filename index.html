@@ -1,1 +1,92 @@
 <a href="https://sz-games.github.io/incredibox-v9/">Incredibox v9</a>
+<!-- HOME PAGE -->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Sigma Games</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 2rem;
+  margin: 2rem;
+}
+
+/* demo purposes only */
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.card {
+  height: 215px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+h3 {
+  color: white;
+  font-size: 24px;
+  margin: 20px 0 0 20px;
+
+}
+
+p {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  align-self: end;
+  margin: 0 0 20px 20px;
+  letter-spacing: 0.5px;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  height: 110%;
+  width: 100%;
+  z-index: -1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.card:hover {
+  transform: scale(1.035, 1.035);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover img {
+  transform: translateY(-10px);
+}
+
+    </style>
+  </head>
+  <body>
+    <img src="https://github.com/sigmasec/database/blob/main/logos/sigmaseclogo.png?raw=true">
+    <h1>SIGMA GAMES</h1>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+<div class="container">
+  <!-- CARDS -->
+  <div class="card">
+    <a href="/play/game.html?game=https://">
+    <img src="https://images.unsplash.com/photo-1533658925625-2f94d23fc425?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=894c97adfd68510170db9ae89704c92e&auto=format&fit=crop&w=800&q=60" />
+    <h3>Card title</h3>
+    <p>Card description</p>
+    </a>
+  </div>
+
+</div>
+<credits>
+  <p>
+  Special thanks to<br>
+  <a href="https://codepen.io/julesforrest/pen/QBzaQR">Jules Forrest on CodePen</a> for the grid layout
+  </p>
+</credits>
+  </body>
+</html>

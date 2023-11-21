@@ -7,7 +7,7 @@
       .title-header {
         text-align: center;
       }
-      .container {
+      .containerCards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
   grid-gap: 2rem;
@@ -17,6 +17,93 @@
         color: black;
       }
 
+  border-radius: 15px;
+}
+
+.bodyold {
+  background: linear-gradient(to bottom, #1d1d1d, #2f2f2f, rgb(58, 58, 58), #1d1d1d, #2f2f2f);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  background: rgb(35, 35, 35);
+  
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+
+}
+
+img {
+  
+  margin: 10px;
+position: relative;
+z-index: 1;
+}
+
+.btn-group button {
+  background-color: black; /* Green background */
+ 
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: grey;
+}
+
+/* Header/Logo Title */
+.header-halloween {
+  padding: 60px;
+  text-align: center;
+  background: linear-gradient(to bottom right, #ff5e00, rgb(39, 39, 39), rgb(39, 39, 39));
+  color: white;
+  width: auto;
+  font-size: 30px;
+  position: relative;
+z-index: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+}
+
+.header {
+  position: relative;
+z-index: 1;
+  padding: 60px;
+  text-align: center;
+  /*background: linear-gradient(to bottom right, #9a9a9a, rgb(39, 39, 39)); */
+  background:rgb(55, 53, 53);
+  color: white;
+  width: auto;
+  font-size: 30px;
+ 
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+}
+
+/* Page Content */
+      
 /* demo purposes only */
 
 * {
@@ -74,7 +161,7 @@ img {
     <h1>SIGMA GAMES</h1>
     </div>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
-<div class="container">
+<div class="containerCards">
   <!-- Blank Card
 
     <div class="card">

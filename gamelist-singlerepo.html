@@ -26,6 +26,9 @@
                                         a.title = item.name;
                                         a.href = `/games/play/game.html?game=https://sigmasec.me/gamebase/${item.name}/index.html`;
                                         gameLinks.appendChild(a);
+                                                                            // Add a line break after each link
+                                    let br = document.createElement('br');
+                                    gameLinks.appendChild(br);
                                     }
                                 });
                             });

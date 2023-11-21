@@ -9,8 +9,9 @@
     <div id="game-links"></div>
 
     <script>
-        const clientId = 'Iv1.c307546ea8ca53af';
+const clientId = 'Iv1.c307546ea8ca53af';
 const clientSecret = 'd2a0e0aed8c0a77ae5eab2add475cc75a11c225d';
+const repos = ['https://api.github.com/repos/sz-games/games/contents/', 'https://api.github.com/repos/sz-games/games2/contents/', 'https://api.github.com/repos/sz-games/games3/contents/','https://api.github.com/repos/sz-games/games4/contents/', 'https://api.github.com/repos/sz-games/games5/contents/', 'https://api.github.com/repos/sz-games/games6/contents/', 'https://api.github.com/repos/sz-games/games7/contents/', 'https://api.github.com/repos/sz-games/games8/contents/', 'https://api.github.com/repos/sz-games/games9/contents/', 'https://api.github.com/repos/mathgames66/mathgames66.github.io/contents/']; // Add more repo URLs here
 
 repos.forEach(repo => {
     fetch(repo, {
@@ -20,12 +21,6 @@ repos.forEach(repo => {
     })
     .then(response => response.json())
     .then(data => {
-const repos = ['https://api.github.com/repos/sz-games/games/contents/', 'https://api.github.com/repos/sz-games/games2/contents/', 'https://api.github.com/repos/sz-games/games3/contents/','https://api.github.com/repos/sz-games/games4/contents/', 'https://api.github.com/repos/sz-games/games5/contents/', 'https://api.github.com/repos/sz-games/games6/contents/', 'https://api.github.com/repos/sz-games/games7/contents/', 'https://api.github.com/repos/sz-games/games8/contents/', 'https://api.github.com/repos/sz-games/games9/contents/', 'https://api.github.com/repos/mathgames66/mathgames66.github.io/contents/']; // Add more repo URLs here
-
-repos.forEach(repo => {
-    fetch(repo)
-        .then(response => response.json())
-        .then(data => {
             let gameLinks = document.getElementById('game-links');
             data.forEach(item => {
                 if (item.type === 'dir') {

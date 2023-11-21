@@ -1,2 +1,2 @@
-# Sigma Games
-Welcome to the official repository of Sigma Games.
+[check deployment status](https://github.com/sigmasec/games/actions)<Br>
+[sigma games website](https://sigmasec.me/games/)

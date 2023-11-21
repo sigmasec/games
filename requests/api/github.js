@@ -12,8 +12,12 @@ repos.forEach(repo => {
     .then(data => {
             let gameLinks = document.getElementById('game-links');
             data.forEach(item => {
-                if (item.type === 'dir') {
-                    fetch(item.url)
+               if (item.type === 'dir') {
+                fetch(item.url, {
+                    headers: {
+                        'Authorization': `Basic ${btoa(clientId + ':' + clientSecret)}`
+                    }
+                })
                         .then(response => response.json())
                         .then(subData => {
                             subData.forEach(subItem => {

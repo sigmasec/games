@@ -14,7 +14,7 @@ Most websites will be hosted with GitHub Pages. You can find the GitHub pages li
 If I want to play Hacker Typer, I can use the link https://sz-games.github.io/Games/Hacker-Typer/, which will automatically redirect to the index.html page.
 
 ## 5. Enter it into the Custom URL Dashboard
-Go to the [Custom URL Dashboard](https://sigmasec.me/games/customurl and we can enter in the Hacker Typer URL.
+Go to the [Custom URL Dashboard](https://sigmasec.me/games/customurl.html) and we can enter in the Hacker Typer URL.
 
 ## 6. Profit.
 There you go, you've offically went to your own custom game URL!

@@ -5,37 +5,40 @@
 </head>
 <body>
     <h1>Game List</h1>
-    <p>Please wait a second for everything to load. To search for something, use Ctrl + F and search for the game you want to play. This is better because it is instantly updated. It grabs every single folder from our game database repository on GitHub and then lists it here. Therefore, this is the fastest way to provide games to our friends (you!)</p>
+    <p>Please wait a second for everything to load. To search for something, use Ctrl + F and search for the game you want to play. This is better because it is instantly updated. It grabs games from outside repositories and updates them here. Just a massive collection of games.</p>
     <div id="game-links"></div>
 
     <script>
-        const repos = ['https://api.github.com/repos/sigmasec/gamebase/contents/', 'https://api.github.com/repos/anotherUser/anotherRepo/contents/']; // Add more repo URLs here
+const repos = ['https://api.github.com/repos/sz-games/games/contents/', 'https://api.github.com/repos/sz-games/games2/contents/', 'https://api.github.com/repos/sz-games/games3/contents/','https://api.github.com/repos/sz-games/games4/contents/', 'https://api.github.com/repos/sz-games/games5/contents/', 'https://api.github.com/repos/sz-games/games6/contents/', 'https://api.github.com/repos/sz-games/games7/contents/', 'https://api.github.com/repos/sz-games/games8/contents/', 'https://api.github.com/repos/sz-games/games9/contents/', 'https://api.github.com/repos/mathgames66/mathgames66.github.io/contents/']; // Add more repo URLs here
 
-        repos.forEach(repo => {
-            fetch(repo)
-                .then(response => response.json())
-                .then(data => {
-                    let gameLinks = document.getElementById('game-links');
-                    data.forEach(item => {
-                        if (item.type === 'dir') {
-                            fetch(item.url)
-                                .then(response => response.json())
-                                .then(subData => {
-                                    subData.forEach(subItem => {
-                                        if (subItem.name === 'index.html') {
-                                            let a = document.createElement('a');
-                                            let linkText = document.createTextNode(item.name);
-                                            a.appendChild(linkText);
-                                            a.title = item.name;
-                                            a.href = `/games/play/game.html?game=https://sigmasec.me/gamebase/${item.name}/index.html`;
-                                            gameLinks.appendChild(a);
-                                        }
-                                    });
-                                });
-                        }
-                    });
-                });
+repos.forEach(repo => {
+    fetch(repo)
+        .then(response => response.json())
+        .then(data => {
+            let gameLinks = document.getElementById('game-links');
+            data.forEach(item => {
+                if (item.type === 'dir') {
+                    fetch(item.url)
+                        .then(response => response.json())
+                        .then(subData => {
+                            subData.forEach(subItem => {
+                                if (subItem.name === 'index.html') {
+                                    let a = document.createElement('a');
+                                    let linkText = document.createTextNode(item.name);
+                                    a.appendChild(linkText);
+                                    a.title = item.name;
+                                    let repoName = repo.split('/')[5]; // Extract the repository name from the repo URL
+                                    let userName = repo.split('/')[4]; // Extract the username from the repo URL
+                                    a.href = `/games/play/game.html?game=https://${userName}.github.io/${repoName}/${item.name}/index.html`;
+                                    gameLinks.appendChild(a);
+                                }
+                            });
+                        });
+                }
+            });
         });
+});
+
     </script>
 </body>
 </html>

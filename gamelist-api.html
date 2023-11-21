@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game List</title>
+</head>
+<body>
+    <h1>Game List</h1>
+  <p>Please wait a second for everything to load. To search for something, use Ctrl + F and search for the game you want to play. This is better because it is instantly updated. It grabs every single folder from our game database repository on GitHub and then lists it here. Therefore, this is the fastest way to provide games to our friends (you!)</p>
+    <div id="game-links"></div>
+
+    <script>
+        fetch('https://api.github.com/repos/sigmasec/gamebase/contents/')
+            .then(response => response.json())
+            .then(data => {
+                let gameLinks = document.getElementById('game-links');
+                data.forEach(item => {
+                    if (item.type === 'dir') {
+                        fetch(item.url)
+                            .then(response => response.json())
+                            .then(subData => {
+                                subData.forEach(subItem => {
+                                    if (subItem.name === 'index.html') {
+                                        let a = document.createElement('a');
+                                        let linkText = document.createTextNode(item.name);
+                                        a.appendChild(linkText);
+                                        a.title = item.name;
+                                        a.href = `/games/play/game.html?game=https://sigmasec.me/gamebase/${item.name}/index.html`;
+                                        gameLinks.appendChild(a);
+                                    }
+                                });
+                            });
+                    }
+                });
+            });
+    </script>
+</body>
+</html>

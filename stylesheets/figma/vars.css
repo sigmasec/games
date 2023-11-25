@@ -1,0 +1,37 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --action-primary: #25dac5;
+  --action-secondary: #482be7;
+  --action-third: #e93a7d;
+  --colors-heading: #1e0e62;
+  --colors-text: rgba(21, 20, 57, 0.4);
+  --colors-white: #ffffff;
+  --colors-grey: #ebeaed;
+  --background-dark: #2f1893;
+  --background-light: #ffffff;
+  --socials-facebook: #4267b2;
+  --socials-youtube: #ea3223;
+  --socials-twitter: #1da1f2;
+  --socials-pinterest: #c8232c;
+  --socials-snapchat: #fffc00;
+  --socials-linked-in: #0077b5;
+  --socials-dribbble: #e94c88;
+
+  /* Fonts */
+  --font-awesome: 400 18px "FontAwesome-Regular", sans-serif;
+  --text-article: 500 18px/28px "DmSans-Medium", sans-serif;
+  --text-paragraph: 400 16px/26px "DmSans-Regular", sans-serif;
+  --text-description: 500 14px/22px "DmSans-Medium", sans-serif;
+  --text-label: 700 14px/26px "DmSans-Bold", sans-serif;
+  --heading-h-1-hero: 700 72px/86px "DmSans-Bold", sans-serif;
+  --heading-h-2-header: 700 58px/70px "DmSans-Bold", sans-serif;
+  --heading-h-3-title: 700 42px/52px "DmSans-Bold", sans-serif;
+  --heading-h-4-headline: 700 32px/42px "DmSans-Bold", sans-serif;
+  --heading-h-5-lead: 500 22px/32px "DmSans-Medium", sans-serif;
+  --buttons-small: 500 16px/22px "DmSans-Medium", sans-serif;
+  --buttons-big: 500 20px/26px "DmSans-Medium", sans-serif;
+  --buttons-middle: 500 18px/26px "DmSans-Medium", sans-serif;
+
+  /* Effects */
+}

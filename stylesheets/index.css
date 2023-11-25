@@ -70,3 +70,13 @@
   position: relative;
   filter: blur(75px);
 }
+.bg,
+.bg * {
+  box-sizing: border-box;
+}
+.bg {
+  background: #ffffff;
+  width: 640px;
+  height: 380px;
+  position: relative;
+}

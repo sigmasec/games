@@ -1,3 +1,4 @@
+/* TEXT */
 .play-games,
 .play-games * {
   box-sizing: border-box;
@@ -34,49 +35,52 @@
   width: 152px;
   height: 21px;
 }
-.ellipseCtr,
-.ellipseCtr * {
+
+/* Epic bg, elipses, aka fancy stuff*/
+.cover,
+.cover * {
   box-sizing: border-box;
 }
-.ellipseCtr {
-  background: #ff0d6a;
-  border-radius: 50%;
-  width: 121px;
-  height: 121px;
-  position: relative;
-  filter: blur(75px);
+.cover {
+  width: 640px;
+  height: 380px;
+  position: static;
 }
-.ellipseL,
-.ellipseL * {
-  box-sizing: border-box;
-}
-.ellipseL {
-  background: #0500ff;
-  border-radius: 50%;
-  width: 121px;
-  height: 121px;
-  position: relative;
-  filter: blur(75px);
-}
-.ellipse,
-.ellipse * {
-  box-sizing: border-box;
+.bg {
+  background: #ffffff;
+  width: 640px;
+  height: 380px;
+  position: absolute;
+  left: -321px;
+  top: -190px;
 }
 .ellipse {
   background: #ff0d6a;
   border-radius: 50%;
   width: 121px;
   height: 121px;
-  position: relative;
+  position: absolute;
+  left: -148px;
+  top: -61px;
   filter: blur(75px);
 }
-.bg,
-.bg * {
-  box-sizing: border-box;
+.ellipse2 {
+  background: #0500ff;
+  border-radius: 50%;
+  width: 121px;
+  height: 121px;
+  position: absolute;
+  left: -71px;
+  top: -61px;
+  filter: blur(75px);
 }
-.bg {
-  background: #ffffff;
-  width: 640px;
-  height: 380px;
-  position: relative;
+.ellipse3 {
+  background: #00ffe0;
+  border-radius: 50%;
+  width: 121px;
+  height: 121px;
+  position: absolute;
+  left: 6px;
+  top: -61px;
+  filter: blur(75px);
 }

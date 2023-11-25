@@ -35,52 +35,74 @@
   width: 152px;
   height: 21px;
 }
+.more-links {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
 
+.more-links:hover {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.more-links:hover + .more-links-hover {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.more-links-hover {
+  color: #2f1893;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: relative;
+  width: 152px;
+  height: 21px;
+}
 /* Epic bg, elipses, aka fancy stuff*/
-.cover,
-.cover * {
-  box-sizing: border-box;
+  a {
+        text-decoration: none;
+      }
+    html, body {
+  height: 100%;
+      text-align: center;
 }
-.cover {
-  width: 640px;
-  height: 380px;
-  position: static;
+
+html {
+  display: table;
+  margin: auto;
 }
-.bg {
-  background: #ffffff;
-  width: 640px;
-  height: 380px;
-  position: absolute;
-  left: -321px;
-  top: -190px;
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
-.ellipse {
-  background: #ff0d6a;
-  border-radius: 50%;
-  width: 121px;
-  height: 121px;
-  position: absolute;
-  left: -148px;
-  top: -61px;
-  filter: blur(75px);
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+/* BKG */
+* {
+	margin: 0;
+	padding: 0;
 }
-.ellipse2 {
-  background: #0500ff;
-  border-radius: 50%;
-  width: 121px;
-  height: 121px;
-  position: absolute;
-  left: -71px;
-  top: -61px;
-  filter: blur(75px);
+.background-animation {
+	font-family: ubuntu;
+    background: linear-gradient(-90deg,#c5f8d0, #fcde7a,#fc5151);
+	background-size: 400% 400%;
+	width: 100%;
+	height: 100vh;
+	animation: animate 5s ease infinite;
 }
-.ellipse3 {
-  background: #00ffe0;
-  border-radius: 50%;
-  width: 121px;
-  height: 121px;
-  position: absolute;
-  left: 6px;
-  top: -61px;
-  filter: blur(75px);
+
+@keyframes animate {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

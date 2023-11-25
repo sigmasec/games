@@ -34,3 +34,39 @@
   width: 152px;
   height: 21px;
 }
+.ellipseCtr,
+.ellipseCtr * {
+  box-sizing: border-box;
+}
+.ellipseCtr {
+  background: #ff0d6a;
+  border-radius: 50%;
+  width: 121px;
+  height: 121px;
+  position: relative;
+  filter: blur(75px);
+}
+.ellipseL,
+.ellipseL * {
+  box-sizing: border-box;
+}
+.ellipseL {
+  background: #0500ff;
+  border-radius: 50%;
+  width: 121px;
+  height: 121px;
+  position: relative;
+  filter: blur(75px);
+}
+.ellipse,
+.ellipse * {
+  box-sizing: border-box;
+}
+.ellipse {
+  background: #ff0d6a;
+  border-radius: 50%;
+  width: 121px;
+  height: 121px;
+  position: relative;
+  filter: blur(75px);
+}

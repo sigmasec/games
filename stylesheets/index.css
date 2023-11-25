@@ -1,0 +1,36 @@
+.play-games,
+.play-games * {
+  box-sizing: border-box;
+}
+.play-games {
+  color: #2f1893;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: relative;
+  width: 134px;
+  height: 22px;
+}
+.sigma-games,
+.sigma-games * {
+  box-sizing: border-box;
+}
+.sigma-games {
+  color: #1e0e62;
+  text-align: left;
+  font: 400 32px "Inter-Regular", sans-serif;
+  position: relative;
+  width: 204px;
+  height: 42px;
+}
+.more-links,
+.more-links * {
+  box-sizing: border-box;
+}
+.more-links {
+  color: #2f1893;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: relative;
+  width: 152px;
+  height: 21px;
+}
